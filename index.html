@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js_Fifo-Lifo</title>
+</head>
+<body>
+    <script>
+        var devices=['keyboard','mouse','printer','moniter']
+        for(var i = 0; i <= devices.length-1; i++){
+            document.write('Out:' + '<br>')
+            document.write(devices[i] + '<br>')
+        }
+        document.write('<br>' + '<br>')
+        for(var i = devices.length-1; i >= 0; i--){
+            document.write('Out:' + '<br>')
+            document.write(devices[i]+ '<br>')
+        }
+
+        var phones=['Apple','Motorola','Samsung','Nokia','Sony','Haier','vivo']
+        // document.write('<select>')
+        for(i = 0; i <= phones.length-1; i++){
+            if(i==0){
+                document.write('<select>')
+            }
+              
+            document.write('<option>'+phones[i] +'</option>')
+            if(i==phones.length-1){
+            document.write('</select>')
+            }
+            
+        }
+        // document.write('</select>')
+        document.write('<details>')
+        document.write('<summary>'+ "phones" +'</summary>')
+        for( var i=0; i<=phones.length-1; i++){
+            document.write('<p>'+phones[i]+'</p>')
+        }
+        // document.write('</summary>')
+        document.write('</details>')
+    </script>
+</body>
+</html>
